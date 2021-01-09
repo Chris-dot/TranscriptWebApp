@@ -1,0 +1,21 @@
+﻿table{
+    
+    border-color: rgb(200, 11, 11);
+    font-family: Arial;
+    font-size:  14px; 
+    text-align: center;
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #C80B0B;
+}
+
+tr:nth-child(even){
+    background-color: #F6F3F3;
+}
+
+.Encabezado{
+    background-color: rgb(200, 11, 11);
+    font-size: 15px;
+    color: white;
+    font-family: Arial;    
+}

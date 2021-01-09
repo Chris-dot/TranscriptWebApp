@@ -1,0 +1,40 @@
+﻿body {
+    font-family:sans-serif,'Trebuchet MS';
+    font-size:11pt;
+    color:black;
+
+
+}
+
+.textoGrande{
+    font-size:13pt !important;
+}
+
+.textoNegrita{
+    font-weight:bold !important;
+}
+
+.linkpagina{
+    text-decoration:none;
+    color:black;
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+.capaPrincipal{
+    width:1010px;
+    position:absolute;
+    left:50%;
+    margin-left: -505px;
+    top:20px;
+
+}
+
+.tablaPrincipal{
+    width:100%;
+
+}
+
+.form-control {
+    height: 30%;
+}

@@ -1,0 +1,23 @@
+﻿body {
+    font-family:sans-serif,'Trebuchet MS';
+}
+
+container-control{
+    display: inline;
+}
+
+form-group-meet{
+    display: flexbox;
+    align-content: flex-end;
+    text-align: right;
+    float: right;        
+}
+
+MemoMeet{
+    display: inline-block;
+    border: solid 1px;
+    align-content: flex-end;
+    text-align: right;
+    float: right;
+}
+
