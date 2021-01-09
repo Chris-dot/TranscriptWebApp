@@ -1,0 +1,74 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="Reconocimiento.WebForm1Registro" %>
+
+<%@ Register Assembly="DevExpress.Web.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.Bootstrap.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.Bootstrap" TagPrefix="dx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
+</head>
+<body>
+
+    <form id="form1" runat="server"> <asp:scriptmanager runat="server"></asp:scriptmanager>
+    <div>
+        <h2>Registro</h2>
+        <%--<dx:BootstrapTextBox ID="BootstrapTextBox1" runat="server">
+            <ValidationSettings ValidationGroup="guardar">
+                <RequiredField IsRequired="true" ErrorText="Has hecho un mal ingreso" />
+                <RegularExpression ValidationExpression="" ErrorText="ddfsdf" />
+                
+            </ValidationSettings>
+        </dx:BootstrapTextBox>--%>
+
+        <dx:ASPxLabel ID="ASPLblUser" runat="server" Text=""></dx:ASPxLabel>
+        <asp:TextBox ID="txtRut" placeholder="Usuario" name="Rut" runat="server" >
+
+
+        </asp:TextBox>
+
+
+        <%--<asp:CustomValidator ID="CustomValidator1" 
+             runat="server"
+             ErrorMessage="No corresponde a un numero"  
+             ControlToValidate="txtRut"
+             ForeColor="Red"
+             OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>--%>
+
+         <%-- <asp:CustomValidator ID="CustomValidator1" 
+             runat="server"
+             ForeColor="Red"></asp:CustomValidator>--%>
+
+
+
+        <dx:aspxlabel ID="ASPLblNombre" runat="server" text=""></dx:aspxlabel>
+        <asp:TextBox ID="txtNombre" placeholder="Nombres" name="Rut" runat="server"></asp:TextBox>
+
+        <asp:Label ID="ASPLblApellidos" runat="server" Text=""></asp:Label>
+        <asp:TextBox ID="txtApellidos" placeholder="Apellidos" name="Apellido" runat="server"></asp:TextBox>
+        
+        <asp:Label ID="ASPLblCargo" runat="server" Text=""></asp:Label>
+        <asp:TextBox ID="txtCargo" placeholder="Cargo" Font-Names="Cargo" runat="server"></asp:TextBox>
+     
+        <asp:Label ID="ASPLblTelefono" runat="server" Text=""></asp:Label>
+        <asp:TextBox ID="txtTelefono" placeholder="Telefono" name="Telefono" runat="server"></asp:TextBox>
+
+        <asp:Label ID="ASPLblEmail" runat="server" Text="Label"></asp:Label>
+        <asp:TextBox ID="txtEmail" placeholder="Email" runat="server"></asp:TextBox>
+
+
+        <asp:Button ID="BtnRegistrar" runat="server" Text="Registrar" OnClick="BtnRegistrar_Click"/>
+
+        <asp:Label ID="LblInfoGuard" runat="server" Text=""></asp:Label>
+
+    
+    </div>
+    </form>
+</body>
+</html>
